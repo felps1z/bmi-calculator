@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div id="blurry-dot"></div>
+        <img src="assets/img/doctor.svg" alt="An illustration of a doctor in a blue lab coat" id="illustration">
+    </section>
+    <section>
+        <form id="form">
+            <h1>BMI <br> Calculator</h1>
+            <div class="input-area">
+                <div class="icon-area">
+                    <i class="fa-solid fa-arrows-up-down"></i>
+                </div>
+                <input type="text" id="weight" placeholder="Enter your weight (pounds. ex.: 180)" required>
+            </div>
+            <div class="input-area">
+                <div class="icon-area">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                </div>
+                <input type="text" id="height" placeholder="Enter your height (feet and inches. ex.: 5'5)" required>
+            </div>
+            <button type="submit" id="btn">To check</button>
+            <div id="response-area">
+                <p></p>
+            </div>
+        </form>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
