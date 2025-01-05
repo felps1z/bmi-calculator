@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html {
-    --background-color: #272727
+    --primary-color: #272727;
+    --secondary-color: #343434;
+    --text-color: #CED3DE;
+    --input-color: #444444;
+    --blue: #407BFF;
 }
 
 * {
@@ -9,11 +13,11 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', serif;
-    color: #CED3DE;
+    color: var(--text-color);
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     position: relative;
     height: 100vh;
     display: grid;
@@ -30,7 +34,7 @@ section {
 #blurry-dot {
     height: 700px;
     width: 700px;
-    background-image: radial-gradient(closest-side, rgba(64, 123, 255, 0.6), var(--background-color));
+    background-image: radial-gradient(closest-side, rgba(64, 123, 255, 0.6), var(--primary-color));
     position: absolute;
     top: -300px;
     left: -35%;
@@ -42,7 +46,7 @@ section {
 }
 
 #form {
-    background-color: #343434;
+    background-color: var(--secondary-color);
     padding: 2rem;
     width: 60%;
     border-radius: 20px;
@@ -55,7 +59,7 @@ section {
 .input-area {
     display: flex;
     margin-top: 1rem;
-    background-color: #444444;
+    background-color: var(--input-color);
     padding: 1rem;
     width: 100%;
     border-radius: 6px;
@@ -78,7 +82,7 @@ section {
 #btn {
     padding: 0.7rem 3rem;
     margin-top: 2rem;
-    background-color: #407BFF;
+    background-color: var(--blue);
     cursor: pointer;
     border: none;
     border-radius: 12px;
@@ -90,7 +94,4 @@ section {
 
 #response-area  p {
     position: absolute;
-}   
-
-.emphasis {
 }
